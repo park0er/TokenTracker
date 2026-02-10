@@ -92,3 +92,4 @@
 2026-02-10T15:04:11Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.107
 2026-02-10T15:04:11Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveP256] connIndex=0 event=0 ip=198.41.192.107
 2026-02-10T15:04:12Z INF Registered tunnel connection connIndex=0 connection=c8a21a4a-1fb7-42dc-9018-92ab1f702f8a event=0 ip=198.41.192.107 location=lax05 protocol=quic
+2026-02-10T15:44:36Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"

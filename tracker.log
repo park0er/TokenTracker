@@ -29,3 +29,39 @@ Run: openclaw doctor --fix
 [2026-02-10T15:17:01.659Z] Logged 12689 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.010516)
 [2026-02-10T15:20:01.682Z] Logged 664 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.000626)
 [2026-02-10T15:26:01.596Z] Logged 6327 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.006037)
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks: Unrecognized key: "directory"
+
+Run: openclaw doctor --fix
+
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks: Unrecognized key: "directory"
+
+Run: openclaw doctor --fix
+
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks: Unrecognized key: "directory"
+
+Run: openclaw doctor --fix
+
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks: Unrecognized key: "directory"
+
+Run: openclaw doctor --fix
+

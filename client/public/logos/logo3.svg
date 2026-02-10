@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="10" y="10" width="80" height="80" rx="20" fill="#1F2937" stroke="#3B82F6" stroke-width="4"/>
+  <text x="50" y="60" font-family="Courier New, monospace" font-size="40" font-weight="bold" fill="#F59E0B" text-anchor="middle">$</text>
+  <path d="M70 20L80 30" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  <path d="M75 20L85 30" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+</svg>

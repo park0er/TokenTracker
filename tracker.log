@@ -1,0 +1,31 @@
+Loaded initial state (empty if fresh run).
+Tracker started. Polling every minute...
+[2026-02-10T09:54:01.441Z] Logged 48251 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.043049)
+[2026-02-10T09:54:01.441Z] Logged 25558 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290 (d92e6bbc-e2c0-4623-8124-5ae6b520c743) ($0.002551)
+[2026-02-10T09:54:01.441Z] Logged 27422 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:eea86d18-0599-4968-b060-b907e7a27bf6 (eea86d18-0599-4968-b060-b907e7a27bf6) ($0.002464)
+[2026-02-10T09:54:01.441Z] Logged 16883 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:89e6e7b0-dc5d-424a-babc-20cee7c77cfc (89e6e7b0-dc5d-424a-babc-20cee7c77cfc) ($0.002362)
+[2026-02-10T09:54:01.441Z] Logged 60394 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:0e452a77-7afa-442e-b4ea-660a5ae23456 (0e452a77-7afa-442e-b4ea-660a5ae23456) ($0.004698)
+[2026-02-10T09:54:01.441Z] Logged 30798 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:d6c76707-e04a-4af3-819b-ec1f1c9d2774 (d6c76707-e04a-4af3-819b-ec1f1c9d2774) ($0.002581)
+[2026-02-10T10:03:01.406Z] Logged 1907 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.004947)
+[2026-02-10T10:20:01.389Z] Logged 2697 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.002288)
+[2026-02-10T10:26:01.533Z] Logged 1894 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.002462)
+[2026-02-10T10:27:01.514Z] Logged 5119 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.007149)
+[2026-02-10T10:29:01.541Z] Logged 7816 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.006472)
+[2026-02-10T10:42:01.564Z] Logged 14783 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.011362)
+[2026-02-10T10:43:01.672Z] Logged 1243 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.001013)
+[2026-02-10T10:46:01.641Z] Logged 3481 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.002654)
+[2026-02-10T10:46:01.641Z] Logged 70141 tokens for agent:main:subagent:c43db932-7ac0-418e-8554-a7cb28ede8ae (219e6ae8-7757-4266-95d6-ca10933e41ba) ($0.006971)
+[2026-02-10T11:00:01.605Z] Logged 5694 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.004615)
+[2026-02-10T11:03:01.396Z] Logged 735 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.001809)
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- agents.defaults.models.xiaomi/mimo: Unrecognized keys: "api", "baseUrl", "token", "model", "contextWindow"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - agents.defaults.models.xiaomi/mimo: Unrecognized keys: "api", "baseUrl", "token", "model", "contextWindow"
+
+Run: openclaw doctor --fix
+
+[2026-02-10T15:17:01.659Z] Logged 12689 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.010516)
+[2026-02-10T15:20:01.682Z] Logged 664 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.000626)
+[2026-02-10T15:26:01.596Z] Logged 6327 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.006037)

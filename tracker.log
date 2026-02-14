@@ -1,67 +1,528 @@
-Loaded initial state (empty if fresh run).
-Tracker started. Polling every minute...
-[2026-02-10T09:54:01.441Z] Logged 48251 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.043049)
-[2026-02-10T09:54:01.441Z] Logged 25558 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290 (d92e6bbc-e2c0-4623-8124-5ae6b520c743) ($0.002551)
-[2026-02-10T09:54:01.441Z] Logged 27422 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:eea86d18-0599-4968-b060-b907e7a27bf6 (eea86d18-0599-4968-b060-b907e7a27bf6) ($0.002464)
-[2026-02-10T09:54:01.441Z] Logged 16883 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:89e6e7b0-dc5d-424a-babc-20cee7c77cfc (89e6e7b0-dc5d-424a-babc-20cee7c77cfc) ($0.002362)
-[2026-02-10T09:54:01.441Z] Logged 60394 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:0e452a77-7afa-442e-b4ea-660a5ae23456 (0e452a77-7afa-442e-b4ea-660a5ae23456) ($0.004698)
-[2026-02-10T09:54:01.441Z] Logged 30798 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:d6c76707-e04a-4af3-819b-ec1f1c9d2774 (d6c76707-e04a-4af3-819b-ec1f1c9d2774) ($0.002581)
-[2026-02-10T10:03:01.406Z] Logged 1907 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.004947)
-[2026-02-10T10:20:01.389Z] Logged 2697 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.002288)
-[2026-02-10T10:26:01.533Z] Logged 1894 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.002462)
-[2026-02-10T10:27:01.514Z] Logged 5119 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.007149)
-[2026-02-10T10:29:01.541Z] Logged 7816 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.006472)
-[2026-02-10T10:42:01.564Z] Logged 14783 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.011362)
-[2026-02-10T10:43:01.672Z] Logged 1243 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.001013)
-[2026-02-10T10:46:01.641Z] Logged 3481 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.002654)
-[2026-02-10T10:46:01.641Z] Logged 70141 tokens for agent:main:subagent:c43db932-7ac0-418e-8554-a7cb28ede8ae (219e6ae8-7757-4266-95d6-ca10933e41ba) ($0.006971)
-[2026-02-10T11:00:01.605Z] Logged 5694 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.004615)
-[2026-02-10T11:03:01.396Z] Logged 735 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.001809)
-Error executing openclaw: Command failed: openclaw sessions --json
-Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- agents.defaults.models.xiaomi/mimo: Unrecognized keys: "api", "baseUrl", "token", "model", "contextWindow"
-Config invalid
-File: ~/.openclaw/openclaw.json
-Problem:
-  - agents.defaults.models.xiaomi/mimo: Unrecognized keys: "api", "baseUrl", "token", "model", "contextWindow"
-
-Run: openclaw doctor --fix
-
-[2026-02-10T15:17:01.659Z] Logged 12689 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.010516)
-[2026-02-10T15:20:01.682Z] Logged 664 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.000626)
-[2026-02-10T15:26:01.596Z] Logged 6327 tokens for agent:main:main (1a87b1d4-351e-4dbb-aaeb-18d7df0e6626) ($0.006037)
-Error executing openclaw: Command failed: openclaw sessions --json
-Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
-Config invalid
-File: ~/.openclaw/openclaw.json
-Problem:
-  - hooks: Unrecognized key: "directory"
-
-Run: openclaw doctor --fix
-
-Error executing openclaw: Command failed: openclaw sessions --json
-Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
-Config invalid
-File: ~/.openclaw/openclaw.json
-Problem:
-  - hooks: Unrecognized key: "directory"
-
-Run: openclaw doctor --fix
-
-Error executing openclaw: Command failed: openclaw sessions --json
-Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
-Config invalid
-File: ~/.openclaw/openclaw.json
-Problem:
-  - hooks: Unrecognized key: "directory"
-
-Run: openclaw doctor --fix
-
-Error executing openclaw: Command failed: openclaw sessions --json
-Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks: Unrecognized key: "directory"
-Config invalid
-File: ~/.openclaw/openclaw.json
-Problem:
-  - hooks: Unrecognized key: "directory"
-
-Run: openclaw doctor --fix
-
+TokenTracker V2 (Log-based) starting...
+Sessions dir: /Users/park0er/.openclaw/agents/main/sessions
+Loaded 2061 known message IDs from DB.
+Polling every minute for new log entries...
+[2026-02-11T19:47:08.545Z] 154244f3-e795-4dff-9554-7c3a539fb02e: +13 new messages
+[2026-02-11T19:47:08.547Z] 1575a579-5e1b-4921-a15e-a4930587b23a: +2 new messages
+[2026-02-11T19:47:08.607Z] 1b98c721-98d7-4f12-af64-8ef0d142a66d: +14 new messages
+[2026-02-11T19:47:08.622Z] 4b65ba65-cf30-488b-9f72-27da59e1f5c6: +108 new messages
+[2026-02-11T19:47:08.624Z] 4d518b05-93a1-4aad-bb10-d860edcfda0f: +2 new messages
+[2026-02-11T19:47:08.627Z] 57f0381f-b51c-4ca7-96d2-1b30ee65204b: +12 new messages
+[2026-02-11T19:47:08.630Z] 5fa21ed6-897e-4470-b488-c19376f87775: +14 new messages
+[2026-02-11T19:47:08.633Z] 641b08d8-a3eb-494e-8637-403e15fb6ad5: +10 new messages
+[2026-02-11T19:47:08.639Z] 69303554-0318-42fe-8aed-6069b7fce924: +85 new messages
+[2026-02-11T19:47:08.654Z] 96310028-9ede-461d-8522-1d4369790665: +15 new messages
+[2026-02-11T19:47:08.658Z] af0b5226-7fcf-43ed-8e27-994d79b51bb9: +12 new messages
+[2026-02-11T19:47:08.660Z] b9234bba-126f-422a-8e82-0967fe1bb547: +5 new messages
+[2026-02-11T19:47:08.661Z] b96a426a-778d-446c-ab7d-154146da97ef: +11 new messages
+[2026-02-11T19:47:08.662Z] c3d385bd-39ec-403d-9ce9-8ba61bdec4c1: +11 new messages
+[2026-02-11T19:47:08.680Z] c9451f5a-eba3-40d5-a705-9856c05ae68f: +11 new messages
+[2026-02-11T19:47:08.682Z] d2ce5c2f-9c37-4077-b328-848c970266be: +15 new messages
+[2026-02-11T19:47:08.692Z] Imported 340 new messages total.
+[2026-02-11T19:48:00.105Z] 358d36f3-2af3-44f5-b0af-742092ae4f68: +2 new messages
+[2026-02-11T19:48:00.138Z] b96a426a-778d-446c-ab7d-154146da97ef: +2 new messages
+[2026-02-11T19:48:00.166Z] Imported 4 new messages total.
+[2026-02-11T19:53:00.064Z] 358d36f3-2af3-44f5-b0af-742092ae4f68: +7 new messages
+[2026-02-11T19:53:00.064Z] 39d13eb0-1ea6-4c9f-bddb-1d2c576547e2: +2 new messages
+[2026-02-11T19:53:00.122Z] Imported 9 new messages total.
+[2026-02-11T19:59:00.077Z] 358d36f3-2af3-44f5-b0af-742092ae4f68: +1 new messages
+[2026-02-11T19:59:00.136Z] Imported 1 new messages total.
+[2026-02-11T20:00:00.114Z] a0ae4f98-8371-4c72-bbb7-640640aaccd1: +2 new messages
+[2026-02-11T20:00:00.154Z] Imported 2 new messages total.
+[2026-02-11T20:01:00.131Z] a0ae4f98-8371-4c72-bbb7-640640aaccd1: +2 new messages
+[2026-02-11T20:01:00.165Z] fc4b1a4d-fa10-4cac-9b4d-30e2674b30b2: +5 new messages
+[2026-02-11T20:01:00.165Z] Imported 7 new messages total.
+[2026-02-11T20:06:00.090Z] 5ec8d82d-8177-4439-86b4-61c2039e641f: +2 new messages
+[2026-02-11T20:06:00.105Z] a0ae4f98-8371-4c72-bbb7-640640aaccd1: +9 new messages
+[2026-02-11T20:06:00.141Z] Imported 11 new messages total.
+[2026-02-11T20:34:00.102Z] 9649c3d0-6dfa-42a5-8d0e-ea694c12cbba: +2 new messages
+[2026-02-11T20:34:00.132Z] Imported 2 new messages total.
+[2026-02-11T20:36:00.083Z] 4c513055-a784-4e5d-bccf-082d3187941b: +4 new messages
+[2026-02-11T20:36:00.104Z] 9649c3d0-6dfa-42a5-8d0e-ea694c12cbba: +15 new messages
+[2026-02-11T20:36:00.140Z] Imported 19 new messages total.
+[2026-02-11T21:01:00.090Z] 4c513055-a784-4e5d-bccf-082d3187941b: +9 new messages
+[2026-02-11T21:01:00.140Z] Imported 9 new messages total.
+[2026-02-11T21:02:00.092Z] 4c513055-a784-4e5d-bccf-082d3187941b: +1 new messages
+[2026-02-11T21:02:00.145Z] Imported 1 new messages total.
+[2026-02-11T21:03:00.145Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-11T21:03:00.157Z] Imported 2 new messages total.
+[2026-02-12T04:27:00.136Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +1 new messages
+[2026-02-12T04:27:00.148Z] Imported 1 new messages total.
+[2026-02-12T04:30:00.147Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +5 new messages
+[2026-02-12T04:30:00.160Z] Imported 5 new messages total.
+[2026-02-12T04:31:00.162Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +1 new messages
+[2026-02-12T04:31:00.173Z] Imported 1 new messages total.
+[2026-02-12T05:31:00.196Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T05:31:00.209Z] Imported 4 new messages total.
+[2026-02-12T05:33:00.184Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T05:33:00.196Z] Imported 4 new messages total.
+[2026-02-12T05:34:00.142Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +8 new messages
+[2026-02-12T05:34:00.153Z] Imported 8 new messages total.
+[2026-02-12T05:35:00.144Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T05:35:00.155Z] Imported 4 new messages total.
+[2026-02-12T05:36:00.181Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +6 new messages
+[2026-02-12T05:36:00.193Z] Imported 6 new messages total.
+[2026-02-12T05:37:00.132Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +3 new messages
+[2026-02-12T05:37:00.144Z] Imported 3 new messages total.
+[2026-02-12T05:39:00.125Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +9 new messages
+[2026-02-12T05:39:00.137Z] Imported 9 new messages total.
+[2026-02-12T05:47:00.122Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T05:47:00.133Z] Imported 4 new messages total.
+[2026-02-12T05:50:00.170Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +10 new messages
+[2026-02-12T05:50:00.192Z] Imported 10 new messages total.
+[2026-02-12T05:52:00.161Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T05:52:00.173Z] Imported 4 new messages total.
+[2026-02-12T05:58:00.148Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T05:58:00.161Z] Imported 4 new messages total.
+[2026-02-12T06:07:00.112Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T06:07:00.125Z] Imported 4 new messages total.
+[2026-02-12T06:12:00.105Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T06:12:00.117Z] Imported 4 new messages total.
+[2026-02-12T06:13:00.122Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +7 new messages
+[2026-02-12T06:13:00.134Z] Imported 7 new messages total.
+[2026-02-12T06:15:00.217Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T06:15:00.236Z] Imported 4 new messages total.
+[2026-02-12T06:16:00.131Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T06:16:00.142Z] Imported 4 new messages total.
+[2026-02-12T06:17:00.137Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +3 new messages
+[2026-02-12T06:17:00.150Z] Imported 3 new messages total.
+[2026-02-12T06:18:00.110Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +1 new messages
+[2026-02-12T06:18:00.122Z] Imported 1 new messages total.
+[2026-02-12T06:24:00.134Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T06:24:00.147Z] Imported 2 new messages total.
+[2026-02-12T06:26:00.117Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +5 new messages
+[2026-02-12T06:26:00.131Z] Imported 5 new messages total.
+[2026-02-12T06:27:00.123Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T06:27:00.135Z] Imported 2 new messages total.
+[2026-02-12T06:28:00.131Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T06:28:00.144Z] Imported 4 new messages total.
+[2026-02-12T06:30:00.118Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T06:30:00.130Z] Imported 2 new messages total.
+[2026-02-12T06:31:00.125Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T06:31:00.136Z] Imported 2 new messages total.
+[2026-02-12T06:34:00.117Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T06:34:00.130Z] Imported 2 new messages total.
+[2026-02-12T06:36:00.138Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T06:36:00.150Z] Imported 4 new messages total.
+[2026-02-12T06:38:00.122Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +6 new messages
+[2026-02-12T06:38:00.134Z] Imported 6 new messages total.
+[2026-02-12T06:39:00.167Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +14 new messages
+[2026-02-12T06:39:00.179Z] Imported 14 new messages total.
+[2026-02-12T06:44:00.138Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +11 new messages
+[2026-02-12T06:44:00.151Z] Imported 11 new messages total.
+[2026-02-12T06:45:00.138Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +5 new messages
+[2026-02-12T06:45:00.151Z] Imported 5 new messages total.
+[2026-02-12T06:47:00.156Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T06:47:00.168Z] Imported 2 new messages total.
+[2026-02-12T06:50:00.169Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +8 new messages
+[2026-02-12T06:50:00.196Z] Imported 8 new messages total.
+[2026-02-12T06:56:00.188Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +8 new messages
+[2026-02-12T06:56:00.201Z] Imported 8 new messages total.
+[2026-02-12T06:57:00.136Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +6 new messages
+[2026-02-12T06:57:00.148Z] Imported 6 new messages total.
+[2026-02-12T06:59:00.126Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +7 new messages
+[2026-02-12T06:59:00.139Z] Imported 7 new messages total.
+[2026-02-12T07:04:00.129Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +6 new messages
+[2026-02-12T07:04:00.142Z] Imported 6 new messages total.
+[2026-02-12T07:06:00.128Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +7 new messages
+[2026-02-12T07:06:00.139Z] Imported 7 new messages total.
+[2026-02-12T07:07:00.129Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +6 new messages
+[2026-02-12T07:07:00.141Z] Imported 6 new messages total.
+[2026-02-12T07:08:00.115Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +6 new messages
+[2026-02-12T07:08:00.135Z] Imported 6 new messages total.
+[2026-02-12T07:09:00.113Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +11 new messages
+[2026-02-12T07:09:00.126Z] Imported 11 new messages total.
+[2026-02-12T07:10:00.126Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +16 new messages
+[2026-02-12T07:10:00.139Z] Imported 16 new messages total.
+[2026-02-12T07:11:00.112Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +19 new messages
+[2026-02-12T07:11:00.124Z] Imported 19 new messages total.
+[2026-02-12T07:12:00.129Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +19 new messages
+[2026-02-12T07:12:00.145Z] Imported 19 new messages total.
+[2026-02-12T07:13:00.140Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +12 new messages
+[2026-02-12T07:13:00.153Z] Imported 12 new messages total.
+[2026-02-12T07:14:00.140Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +7 new messages
+[2026-02-12T07:14:00.153Z] Imported 7 new messages total.
+[2026-02-12T07:26:00.152Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +20 new messages
+[2026-02-12T07:26:00.166Z] Imported 20 new messages total.
+[2026-02-12T07:27:00.142Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +5 new messages
+[2026-02-12T07:27:00.154Z] Imported 5 new messages total.
+[2026-02-12T07:35:00.131Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +9 new messages
+[2026-02-12T07:35:00.145Z] Imported 9 new messages total.
+[2026-02-12T07:40:00.130Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +3 new messages
+[2026-02-12T07:40:00.143Z] Imported 3 new messages total.
+[2026-02-12T07:49:00.130Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T07:49:00.144Z] Imported 4 new messages total.
+[2026-02-12T07:58:00.216Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +7 new messages
+[2026-02-12T07:58:00.230Z] Imported 7 new messages total.
+[2026-02-12T07:59:00.188Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +4 new messages
+[2026-02-12T07:59:00.201Z] Imported 4 new messages total.
+[2026-02-12T08:04:00.182Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T08:04:00.195Z] Imported 2 new messages total.
+[2026-02-12T08:05:00.170Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +1 new messages
+[2026-02-12T08:05:00.182Z] Imported 1 new messages total.
+[2026-02-12T08:07:00.143Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +2 new messages
+[2026-02-12T08:07:00.155Z] Imported 2 new messages total.
+[2026-02-12T08:16:00.188Z] c7581975-eaa2-4782-9d40-e1a0307980cd: +3 new messages
+[2026-02-12T08:16:00.200Z] Imported 3 new messages total.
+[2026-02-12T08:18:00.098Z] 76b07886-f541-4a7a-845f-3abcfe9bf0cd: +2 new messages
+[2026-02-12T08:18:00.180Z] Imported 2 new messages total.
+[2026-02-12T09:11:00.164Z] 76b07886-f541-4a7a-845f-3abcfe9bf0cd: +4 new messages
+[2026-02-12T09:11:00.218Z] Imported 4 new messages total.
+[2026-02-12T09:12:00.123Z] 76b07886-f541-4a7a-845f-3abcfe9bf0cd: +3 new messages
+[2026-02-12T09:12:00.176Z] Imported 3 new messages total.
+[2026-02-12T09:31:00.179Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-12T09:31:00.192Z] Imported 2 new messages total.
+[2026-02-12T09:43:00.125Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-12T09:43:00.137Z] Imported 2 new messages total.
+[2026-02-12T09:45:00.173Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-12T09:45:00.186Z] Imported 2 new messages total.
+[2026-02-12T09:46:00.125Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-12T09:46:00.136Z] Imported 1 new messages total.
+[2026-02-12T09:48:00.159Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-12T09:48:00.170Z] Imported 2 new messages total.
+[2026-02-12T09:50:00.186Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-12T09:50:00.198Z] Imported 2 new messages total.
+[2026-02-12T20:01:00.107Z] 40959d9b-3c1f-4d75-850b-1dfdfee969f6: +9 new messages
+[2026-02-12T20:01:00.170Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-12T20:01:00.181Z] Imported 12 new messages total.
+[2026-02-13T02:35:00.129Z] 75d3774e-9605-4133-b218-608233d4e868: +11 new messages
+[2026-02-13T02:35:00.175Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T02:35:00.187Z] Imported 13 new messages total.
+[2026-02-13T02:36:00.146Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T02:36:00.158Z] Imported 3 new messages total.
+[2026-02-13T02:37:00.169Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T02:37:00.180Z] Imported 2 new messages total.
+[2026-02-13T02:38:00.154Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T02:38:00.165Z] Imported 3 new messages total.
+[2026-02-13T02:40:00.016Z] 13ac43af-4ce9-4715-a7ef-8033710af2a7: +5 new messages
+[2026-02-13T02:40:00.121Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T02:40:00.124Z] Imported 8 new messages total.
+[2026-02-13T02:41:00.015Z] 13ac43af-4ce9-4715-a7ef-8033710af2a7: +1 new messages
+[2026-02-13T02:41:00.113Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T02:41:00.117Z] Imported 4 new messages total.
+[2026-02-13T02:42:00.112Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T02:42:00.116Z] Imported 1 new messages total.
+[2026-02-13T02:43:00.113Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +15 new messages
+[2026-02-13T02:43:00.117Z] Imported 15 new messages total.
+[2026-02-13T02:44:00.091Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T02:44:00.095Z] Imported 5 new messages total.
+[2026-02-13T02:45:00.114Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T02:45:00.117Z] Imported 5 new messages total.
+[2026-02-13T02:55:00.107Z] bf2b4fd6-6fcb-4336-8af7-c3f1f98f5ec8: +6 new messages
+[2026-02-13T02:55:00.139Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T02:55:00.150Z] Imported 9 new messages total.
+[2026-02-13T02:56:00.132Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T02:56:00.143Z] Imported 2 new messages total.
+[2026-02-13T02:57:00.120Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +4 new messages
+[2026-02-13T02:57:00.130Z] Imported 4 new messages total.
+[2026-02-13T02:58:00.133Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T02:58:00.145Z] Imported 5 new messages total.
+[2026-02-13T05:38:00.135Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T05:38:00.138Z] Imported 1 new messages total.
+[2026-02-13T05:39:00.126Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +9 new messages
+[2026-02-13T05:39:00.129Z] Imported 9 new messages total.
+[2026-02-13T05:40:00.115Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T05:40:00.118Z] Imported 2 new messages total.
+[2026-02-13T05:41:00.117Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T05:41:00.121Z] Imported 1 new messages total.
+[2026-02-13T05:42:00.114Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:42:00.118Z] Imported 8 new messages total.
+[2026-02-13T05:43:00.116Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +9 new messages
+[2026-02-13T05:43:00.119Z] Imported 9 new messages total.
+[2026-02-13T05:44:00.144Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +9 new messages
+[2026-02-13T05:44:00.155Z] Imported 9 new messages total.
+[2026-02-13T05:45:00.118Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:45:00.121Z] Imported 8 new messages total.
+[2026-02-13T05:46:00.140Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T05:46:00.151Z] Imported 2 new messages total.
+[2026-02-13T05:47:00.120Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T05:47:00.123Z] Imported 3 new messages total.
+[2026-02-13T05:48:00.116Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +4 new messages
+[2026-02-13T05:48:00.119Z] Imported 4 new messages total.
+[2026-02-13T05:49:00.129Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T05:49:00.140Z] Imported 1 new messages total.
+[2026-02-13T05:50:00.137Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T05:50:00.147Z] Imported 1 new messages total.
+[2026-02-13T05:51:00.133Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T05:51:00.145Z] Imported 2 new messages total.
+[2026-02-13T05:52:00.139Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:52:00.151Z] Imported 8 new messages total.
+[2026-02-13T05:53:00.113Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:53:00.116Z] Imported 8 new messages total.
+[2026-02-13T05:54:00.111Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:54:00.115Z] Imported 8 new messages total.
+[2026-02-13T05:55:00.116Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:55:00.120Z] Imported 8 new messages total.
+[2026-02-13T05:56:00.116Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +7 new messages
+[2026-02-13T05:56:00.119Z] Imported 7 new messages total.
+[2026-02-13T05:57:00.119Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T05:57:00.123Z] Imported 5 new messages total.
+[2026-02-13T05:58:00.114Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T05:58:00.118Z] Imported 8 new messages total.
+[2026-02-13T05:59:00.118Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +7 new messages
+[2026-02-13T05:59:00.121Z] Imported 7 new messages total.
+[2026-02-13T06:00:00.118Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +6 new messages
+[2026-02-13T06:00:00.122Z] Imported 6 new messages total.
+[2026-02-13T06:01:00.138Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T06:01:00.150Z] Imported 3 new messages total.
+[2026-02-13T06:02:00.131Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T06:02:00.142Z] Imported 1 new messages total.
+[2026-02-13T06:08:00.117Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T06:08:00.120Z] Imported 1 new messages total.
+[2026-02-13T06:09:00.067Z] 374fc245-dd4f-49f8-8154-804921f24a66: +7 new messages
+[2026-02-13T06:09:00.114Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +4 new messages
+[2026-02-13T06:09:00.117Z] Imported 11 new messages total.
+[2026-02-13T06:10:00.135Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T06:10:00.146Z] Imported 2 new messages total.
+[2026-02-13T06:11:00.115Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T06:11:00.119Z] Imported 2 new messages total.
+[2026-02-13T06:31:00.113Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T06:31:00.117Z] Imported 5 new messages total.
+[2026-02-13T06:32:00.113Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T06:32:00.117Z] Imported 5 new messages total.
+[2026-02-13T06:34:00.081Z] 7228e5b6-bf04-409f-87f7-b60da8881311: +7 new messages
+[2026-02-13T06:34:00.117Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T06:34:00.120Z] Imported 8 new messages total.
+[2026-02-13T06:35:00.125Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +6 new messages
+[2026-02-13T06:35:00.128Z] Imported 6 new messages total.
+[2026-02-13T06:53:00.108Z] b80dbb64-9d8d-41bc-91b9-7ed13de89a3c: +5 new messages
+[2026-02-13T06:53:00.143Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +9 new messages
+[2026-02-13T06:53:00.154Z] Imported 14 new messages total.
+[2026-02-13T06:54:00.143Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +1 new messages
+[2026-02-13T06:54:00.154Z] Imported 1 new messages total.
+[2026-02-13T06:55:00.118Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +3 new messages
+[2026-02-13T06:55:00.121Z] Imported 3 new messages total.
+[2026-02-13T06:58:00.117Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +2 new messages
+[2026-02-13T06:58:00.120Z] Imported 2 new messages total.
+[2026-02-13T06:59:00.118Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +8 new messages
+[2026-02-13T06:59:00.121Z] Imported 8 new messages total.
+[2026-02-13T07:06:00.110Z] d1ab6eb9-0be7-43d4-b822-ecafef5cb0f8: +5 new messages
+[2026-02-13T07:06:00.114Z] Imported 5 new messages total.
+[2026-02-13T07:08:00.082Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +4 new messages
+[2026-02-13T07:08:00.160Z] Imported 4 new messages total.
+[2026-02-13T07:09:00.077Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +2 new messages
+[2026-02-13T07:09:00.152Z] Imported 2 new messages total.
+[2026-02-13T07:21:00.078Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +5 new messages
+[2026-02-13T07:21:00.158Z] Imported 5 new messages total.
+[2026-02-13T07:30:00.076Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +2 new messages
+[2026-02-13T07:30:00.157Z] Imported 2 new messages total.
+[2026-02-13T07:31:00.075Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T07:31:00.148Z] Imported 1 new messages total.
+[2026-02-13T07:32:00.079Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +12 new messages
+[2026-02-13T07:32:00.152Z] Imported 12 new messages total.
+[2026-02-13T07:33:00.078Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +3 new messages
+[2026-02-13T07:33:00.153Z] Imported 3 new messages total.
+[2026-02-13T07:38:00.077Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +2 new messages
+[2026-02-13T07:38:00.127Z] Imported 2 new messages total.
+[2026-02-13T07:40:00.076Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +2 new messages
+[2026-02-13T07:40:00.126Z] Imported 2 new messages total.
+[2026-02-13T07:43:00.076Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +4 new messages
+[2026-02-13T07:43:00.148Z] Imported 4 new messages total.
+[2026-02-13T07:45:00.073Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +3 new messages
+[2026-02-13T07:45:00.123Z] Imported 3 new messages total.
+[2026-02-13T07:48:00.077Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T07:48:00.128Z] Imported 1 new messages total.
+[2026-02-13T07:50:00.073Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +4 new messages
+[2026-02-13T07:50:00.155Z] Imported 4 new messages total.
+[2026-02-13T07:51:00.079Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +3 new messages
+[2026-02-13T07:51:00.153Z] Imported 3 new messages total.
+[2026-02-13T07:52:00.083Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +3 new messages
+[2026-02-13T07:52:00.161Z] Imported 3 new messages total.
+[2026-02-13T07:55:00.079Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +2 new messages
+[2026-02-13T07:55:00.161Z] Imported 2 new messages total.
+[2026-02-13T07:56:00.076Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T07:56:00.151Z] Imported 1 new messages total.
+[2026-02-13T08:00:00.074Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +3 new messages
+[2026-02-13T08:00:00.125Z] Imported 3 new messages total.
+[2026-02-13T08:04:00.067Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +3 new messages
+[2026-02-13T08:04:00.119Z] Imported 3 new messages total.
+[2026-02-13T08:05:00.075Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +2 new messages
+[2026-02-13T08:05:00.125Z] Imported 2 new messages total.
+[2026-02-13T08:35:00.077Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T08:35:00.127Z] Imported 1 new messages total.
+[2026-02-13T08:36:00.081Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +5 new messages
+[2026-02-13T08:36:00.162Z] Imported 5 new messages total.
+[2026-02-13T08:41:00.081Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +6 new messages
+[2026-02-13T08:41:00.163Z] Imported 6 new messages total.
+[2026-02-13T08:42:00.083Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +6 new messages
+[2026-02-13T08:42:00.166Z] Imported 6 new messages total.
+[2026-02-13T08:43:00.080Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T08:43:00.163Z] Imported 1 new messages total.
+[2026-02-13T08:45:00.084Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +4 new messages
+[2026-02-13T08:45:00.163Z] Imported 4 new messages total.
+[2026-02-13T08:46:00.070Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T08:46:00.153Z] Imported 1 new messages total.
+[2026-02-13T08:47:00.078Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T08:47:00.158Z] Imported 1 new messages total.
+[2026-02-13T08:48:00.079Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T08:48:00.159Z] Imported 1 new messages total.
+[2026-02-13T08:58:00.083Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T08:58:00.166Z] Imported 1 new messages total.
+[2026-02-13T09:00:00.073Z] 24a85422-583d-42e0-b1b3-85b4f85599f5: +1 new messages
+[2026-02-13T09:00:00.095Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T09:00:00.155Z] Imported 3 new messages total.
+[2026-02-13T11:03:00.101Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T11:03:00.157Z] Imported 2 new messages total.
+[2026-02-13T11:04:00.090Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T11:04:00.128Z] Imported 2 new messages total.
+[2026-02-13T15:14:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T15:14:00.175Z] Imported 2 new messages total.
+[2026-02-13T17:40:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T17:40:00.171Z] Imported 5 new messages total.
+[2026-02-13T17:43:00.115Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-13T17:43:00.174Z] Imported 1 new messages total.
+[2026-02-13T17:45:00.107Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-13T17:45:00.167Z] Imported 1 new messages total.
+[2026-02-13T17:47:00.105Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T17:47:00.163Z] Imported 5 new messages total.
+[2026-02-13T17:50:00.124Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +4 new messages
+[2026-02-13T17:50:00.185Z] Imported 4 new messages total.
+[2026-02-13T17:54:00.124Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T17:54:00.187Z] Imported 3 new messages total.
+[2026-02-13T17:55:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T17:55:00.174Z] Imported 3 new messages total.
+[2026-02-13T17:57:00.109Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T17:57:00.168Z] Imported 2 new messages total.
+[2026-02-13T17:59:00.107Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T17:59:00.167Z] Imported 5 new messages total.
+[2026-02-13T18:00:00.106Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-13T18:00:00.165Z] Imported 1 new messages total.
+[2026-02-13T18:03:00.117Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:03:00.176Z] Imported 3 new messages total.
+[2026-02-13T18:07:00.114Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T18:07:00.173Z] Imported 2 new messages total.
+[2026-02-13T18:09:00.106Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:09:00.163Z] Imported 3 new messages total.
+[2026-02-13T18:10:00.112Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +6 new messages
+[2026-02-13T18:10:00.168Z] Imported 6 new messages total.
+[2026-02-13T18:11:00.115Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +7 new messages
+[2026-02-13T18:11:00.180Z] Imported 7 new messages total.
+[2026-02-13T18:12:00.107Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +9 new messages
+[2026-02-13T18:12:00.164Z] Imported 9 new messages total.
+[2026-02-13T18:13:00.115Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:13:00.174Z] Imported 3 new messages total.
+[2026-02-13T18:16:00.109Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +6 new messages
+[2026-02-13T18:16:00.167Z] Imported 6 new messages total.
+[2026-02-13T18:17:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:17:00.171Z] Imported 3 new messages total.
+[2026-02-13T18:18:00.112Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T18:18:00.171Z] Imported 5 new messages total.
+[2026-02-13T18:19:00.112Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-13T18:19:00.170Z] Imported 1 new messages total.
+[2026-02-13T18:40:00.118Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:40:00.185Z] Imported 3 new messages total.
+[2026-02-13T18:41:00.121Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T18:41:00.188Z] Imported 5 new messages total.
+[2026-02-13T18:43:00.118Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:43:00.178Z] Imported 3 new messages total.
+[2026-02-13T18:44:00.137Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +4 new messages
+[2026-02-13T18:44:00.197Z] Imported 4 new messages total.
+[2026-02-13T18:45:00.110Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +7 new messages
+[2026-02-13T18:45:00.168Z] Imported 7 new messages total.
+[2026-02-13T18:46:00.118Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T18:46:00.180Z] Imported 5 new messages total.
+[2026-02-13T18:47:00.115Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +6 new messages
+[2026-02-13T18:47:00.174Z] Imported 6 new messages total.
+[2026-02-13T18:48:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +7 new messages
+[2026-02-13T18:48:00.173Z] Imported 7 new messages total.
+[2026-02-13T18:49:00.134Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +7 new messages
+[2026-02-13T18:49:00.196Z] Imported 7 new messages total.
+[2026-02-13T18:50:00.157Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +10 new messages
+[2026-02-13T18:50:00.160Z] 72147d94-ba39-4cd4-b9fa-3804557004a7: +14 new messages
+[2026-02-13T18:50:00.175Z] c3990685-42f5-4920-b1b3-b076513160f8: +8 new messages
+[2026-02-13T18:50:00.224Z] Imported 32 new messages total.
+[2026-02-13T18:51:00.115Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +8 new messages
+[2026-02-13T18:51:00.174Z] Imported 8 new messages total.
+[2026-02-13T18:53:00.131Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:53:00.196Z] Imported 3 new messages total.
+[2026-02-13T18:54:00.126Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +5 new messages
+[2026-02-13T18:54:00.192Z] Imported 5 new messages total.
+[2026-02-13T18:55:00.115Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T18:55:00.176Z] Imported 2 new messages total.
+[2026-02-13T18:56:00.133Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-13T18:56:00.195Z] Imported 3 new messages total.
+[2026-02-13T20:01:00.132Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-13T20:01:00.134Z] 735f8fc3-e8a0-4b87-a09d-1c720dfaa6c8: +5 new messages
+[2026-02-13T20:01:00.192Z] Imported 7 new messages total.
+[2026-02-13T20:02:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-13T20:02:00.172Z] Imported 1 new messages total.
+[2026-02-14T03:43:00.138Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T03:43:00.200Z] Imported 1 new messages total.
+[2026-02-14T03:44:00.126Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-14T03:44:00.185Z] Imported 2 new messages total.
+[2026-02-14T03:45:00.114Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T03:45:00.177Z] Imported 1 new messages total.
+[2026-02-14T03:59:00.122Z] 6374e424-4349-4cee-87b1-17a376f80c07: +1 new messages
+[2026-02-14T03:59:00.136Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-14T03:59:00.194Z] Imported 3 new messages total.
+[2026-02-14T04:00:00.140Z] 6374e424-4349-4cee-87b1-17a376f80c07: +4 new messages
+[2026-02-14T04:00:00.156Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:00:00.225Z] Imported 5 new messages total.
+[2026-02-14T04:02:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:02:00.174Z] Imported 1 new messages total.
+[2026-02-14T04:07:00.119Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:07:00.182Z] Imported 1 new messages total.
+[2026-02-14T04:08:00.175Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:08:00.236Z] Imported 1 new messages total.
+[2026-02-14T04:11:00.118Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +6 new messages
+[2026-02-14T04:11:00.182Z] Imported 6 new messages total.
+[2026-02-14T04:12:00.157Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:12:00.224Z] Imported 1 new messages total.
+[2026-02-14T04:17:00.140Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:17:00.198Z] Imported 1 new messages total.
+[2026-02-14T04:22:00.119Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:22:00.180Z] Imported 1 new messages total.
+[2026-02-14T04:24:00.124Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:24:00.189Z] Imported 1 new messages total.
+[2026-02-14T04:25:00.119Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-14T04:25:00.187Z] Imported 2 new messages total.
+[2026-02-14T04:27:00.114Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:27:00.177Z] Imported 1 new messages total.
+[2026-02-14T04:29:00.111Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:29:00.173Z] Imported 1 new messages total.
+[2026-02-14T04:31:00.124Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:31:00.186Z] Imported 1 new messages total.
+[2026-02-14T04:36:00.157Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:36:00.222Z] Imported 1 new messages total.
+[2026-02-14T04:37:00.135Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:37:00.202Z] Imported 1 new messages total.
+[2026-02-14T04:39:00.146Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:39:00.208Z] Imported 1 new messages total.
+[2026-02-14T04:40:00.125Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:40:00.185Z] Imported 1 new messages total.
+[2026-02-14T04:45:00.141Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:45:00.208Z] Imported 1 new messages total.
+[2026-02-14T04:46:00.142Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-14T04:46:00.201Z] Imported 2 new messages total.
+[2026-02-14T04:53:00.095Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +8 new messages
+[2026-02-14T04:53:00.129Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +9 new messages
+[2026-02-14T04:53:00.191Z] Imported 17 new messages total.
+[2026-02-14T04:54:00.103Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +11 new messages
+[2026-02-14T04:54:00.138Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +2 new messages
+[2026-02-14T04:54:00.199Z] Imported 13 new messages total.
+[2026-02-14T04:55:00.152Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +30 new messages
+[2026-02-14T04:55:00.184Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T04:55:00.256Z] Imported 31 new messages total.
+[2026-02-14T04:56:00.102Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +23 new messages
+[2026-02-14T04:56:00.197Z] Imported 23 new messages total.
+[2026-02-14T04:57:00.120Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +28 new messages
+[2026-02-14T04:57:00.210Z] Imported 28 new messages total.
+[2026-02-14T04:58:00.097Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +26 new messages
+[2026-02-14T04:58:00.189Z] Imported 26 new messages total.
+[2026-02-14T04:59:00.092Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +22 new messages
+[2026-02-14T04:59:00.185Z] Imported 22 new messages total.
+[2026-02-14T05:00:00.089Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +12 new messages
+[2026-02-14T05:00:00.186Z] Imported 12 new messages total.
+[2026-02-14T05:01:00.070Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +24 new messages
+[2026-02-14T05:01:00.160Z] Imported 24 new messages total.
+[2026-02-14T05:02:00.084Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +21 new messages
+[2026-02-14T05:02:00.186Z] Imported 21 new messages total.
+[2026-02-14T05:03:00.929Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +22 new messages
+[2026-02-14T05:03:01.334Z] Imported 22 new messages total.
+[2026-02-14T05:04:00.887Z] 28af3f9f-8909-42f5-9ba9-463d3dcca2d4: +3 new messages
+[2026-02-14T05:04:00.934Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +7 new messages
+[2026-02-14T05:04:01.120Z] Imported 10 new messages total.
+[2026-02-14T05:05:00.167Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +1 new messages
+[2026-02-14T05:05:00.287Z] Imported 1 new messages total.
+[2026-02-14T05:58:00.117Z] 6fc1ccc5-cc8f-4e5e-885f-d8fc41f5a2bd: +3 new messages
+[2026-02-14T05:58:00.177Z] Imported 3 new messages total.

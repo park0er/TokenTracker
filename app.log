@@ -1,0 +1,166 @@
+
+> tokentracker@1.0.0 start
+> node server.js & node tracker.js
+
+Loaded initial state (empty if fresh run).
+Tracker started. Polling every minute...
+Server running on http://localhost:3300
+Using database at: /Users/park0er/Coding/TokenTracker/ledger.db
+[2026-02-10T18:21:01.827Z] Logged 18641 tokens for agent:main:main (¥0.0131)
+[2026-02-10T18:21:01.827Z] Logged 25558 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290 (¥0.0179)
+[2026-02-10T18:21:01.827Z] Logged 27422 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:eea86d18-0599-4968-b060-b907e7a27bf6 (¥0.0172)
+[2026-02-10T18:21:01.827Z] Logged 16883 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:89e6e7b0-dc5d-424a-babc-20cee7c77cfc (¥0.0165)
+[2026-02-10T18:21:01.827Z] Logged 60394 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:0e452a77-7afa-442e-b4ea-660a5ae23456 (¥0.0329)
+[2026-02-10T18:21:01.827Z] Logged 30798 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290:run:d6c76707-e04a-4af3-819b-ec1f1c9d2774 (¥0.0181)
+[2026-02-10T18:24:01.533Z] Logged 243503 tokens for agent:main:main (¥0.1707)
+[2026-02-10T18:48:01.067Z] Logged 193119 tokens for agent:main:main (¥0.1359)
+[2026-02-10T18:54:01.678Z] Logged 8166 tokens for agent:main:main (¥0.0060)
+Session d3b3c0b0-cfa9-4806-89d1-08d51fe52cf2 reset detected. New total: 31150
+[2026-02-10T19:02:01.682Z] Logged 31150 tokens for agent:main:main (¥0.3313)
+[2026-02-10T19:20:01.574Z] Logged 235134 tokens for agent:main:main (¥4.0858)
+[2026-02-10T19:22:01.818Z] Logged 33360 tokens for agent:main:main (¥0.5887)
+[2026-02-10T19:29:01.767Z] Logged 14276 tokens for agent:main:main (¥0.2549)
+[2026-02-10T19:30:01.736Z] Logged 5575 tokens for agent:main:main (¥0.0994)
+[2026-02-10T19:32:01.743Z] Logged 15303 tokens for agent:main:main (¥0.2711)
+[2026-02-10T19:37:01.833Z] Logged 5158 tokens for agent:main:main (¥0.0953)
+Session d3b3c0b0-cfa9-4806-89d1-08d51fe52cf2 reset detected. New total: 182641
+[2026-02-10T19:42:01.829Z] Logged 182641 tokens for agent:main:main (¥3.7857)
+[2026-02-10T19:44:01.827Z] Logged 18757 tokens for agent:main:main (¥0.0019)
+[2026-02-10T19:51:01.537Z] Logged 58608 tokens for agent:main:main (¥1.2745)
+[2026-02-10T19:53:02.013Z] Logged 35586 tokens for agent:main:main (¥0.0036)
+[2026-02-10T19:57:01.718Z] Logged 16819 tokens for agent:main:main (¥0.2950)
+[2026-02-10T20:00:01.779Z] Logged 269488 tokens for agent:main:main (¥6.3054)
+Session 567b0c66-25d4-408c-ab8c-88f868351de3 reset detected. New total: 0
+[2026-02-10T20:01:01.914Z] Logged 0 tokens for agent:main:main (¥0.0000)
+[2026-02-10T20:01:01.914Z] Logged 95821 tokens for agent:main:cron:46676c51-e1c5-4ff1-905d-ac672be64290 (¥0.0120)
+[2026-02-10T20:02:01.931Z] Logged 42585 tokens for agent:main:main (¥0.7826)
+[2026-02-10T20:04:01.819Z] Logged 35586 tokens for agent:main:main (¥0.0036)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 24228
+[2026-02-10T20:08:01.573Z] Logged 24228 tokens for agent:main:main (¥0.5778)
+[2026-02-10T20:11:01.793Z] Logged 59329 tokens for agent:main:main (¥1.1075)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 42899
+[2026-02-10T20:30:01.833Z] Logged 42899 tokens for agent:main:main (¥0.7413)
+[2026-02-10T20:31:01.770Z] Logged 45733 tokens for agent:main:main (¥0.9879)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 45200
+[2026-02-10T20:32:01.994Z] Logged 45200 tokens for agent:main:main (¥1.3074)
+[2026-02-10T20:33:01.618Z] Logged 49811 tokens for agent:main:main (¥0.9503)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 49939
+[2026-02-10T20:35:01.606Z] Logged 49939 tokens for agent:main:main (¥1.6294)
+[2026-02-10T20:38:01.581Z] Logged 56341 tokens for agent:main:main (¥1.2757)
+[2026-02-10T20:43:01.725Z] Logged 236310 tokens for agent:main:main (¥5.0800)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 293867
+[2026-02-10T20:48:01.777Z] Logged 293867 tokens for agent:main:main (¥5.3419)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 183582
+[2026-02-10T20:51:01.749Z] Logged 183582 tokens for agent:main:main (¥3.8061)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 66591
+[2026-02-10T20:58:01.728Z] Logged 66591 tokens for agent:main:main (¥1.2429)
+[2026-02-10T21:08:02.861Z] Logged 140063 tokens for agent:main:main (¥3.9748)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 71174
+[2026-02-10T21:11:01.847Z] Logged 71174 tokens for agent:main:main (¥1.2618)
+[2026-02-11T04:01:01.803Z] Logged 596 tokens for agent:main:main (¥0.0103)
+[2026-02-11T04:05:01.767Z] Logged 145200 tokens for agent:main:main (¥3.6560)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 146723
+[2026-02-11T04:08:01.838Z] Logged 146723 tokens for agent:main:main (¥3.9446)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 75431
+[2026-02-11T04:13:01.694Z] Logged 75431 tokens for agent:main:main (¥1.6343)
+[2026-02-11T04:20:01.747Z] Logged 237005 tokens for agent:main:main (¥4.3125)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 160742
+[2026-02-11T04:32:01.693Z] Logged 160742 tokens for agent:main:main (¥2.7799)
+[2026-02-11T04:34:02.149Z] Logged 586626 tokens for agent:main:main (¥10.8614)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 174951
+[2026-02-11T04:36:01.868Z] Logged 174951 tokens for agent:main:main (¥3.1043)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 88345
+[2026-02-11T04:57:02.330Z] Logged 88345 tokens for agent:main:main (¥1.5264)
+[2026-02-11T04:58:02.057Z] Logged 88891 tokens for agent:main:main (¥1.5392)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 94489
+[2026-02-11T05:01:01.338Z] Logged 94489 tokens for agent:main:main (¥0.3265)
+[2026-02-11T05:02:01.753Z] Logged 276023 tokens for agent:main:main (¥0.9569)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 281580
+[2026-02-11T05:03:01.954Z] Logged 281580 tokens for agent:main:main (¥0.9780)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 92452
+[2026-02-11T05:05:02.323Z] Logged 92452 tokens for agent:main:main (¥0.3303)
+[2026-02-11T05:08:01.934Z] Logged 401 tokens for agent:main:main (¥0.0014)
+[2026-02-11T05:09:01.904Z] Logged 748 tokens for agent:main:main (¥0.0042)
+[2026-02-11T05:11:01.950Z] Logged 682 tokens for agent:main:main (¥0.0038)
+[2026-02-11T05:12:02.252Z] Logged 458 tokens for agent:main:main (¥0.0016)
+[2026-02-11T05:14:02.030Z] Logged 93853 tokens for agent:main:main (¥1.6517)
+[2026-02-11T05:15:02.190Z] Logged 1296 tokens for agent:main:main (¥0.0296)
+[2026-02-11T05:22:02.120Z] Logged 1715 tokens for agent:main:main (¥0.0349)
+[2026-02-11T05:25:02.040Z] Logged 6247 tokens for agent:main:main (¥0.1358)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 99484
+[2026-02-11T05:43:01.931Z] Logged 99484 tokens for agent:main:main (¥1.7350)
+[2026-02-11T05:44:01.920Z] Logged 101744 tokens for agent:main:main (¥2.6072)
+[2026-02-11T05:47:01.903Z] Logged 105572 tokens for agent:main:main (¥1.9228)
+Session 4b65ba65-cf30-488b-9f72-27da59e1f5c6 reset detected. New total: 103537
+[2026-02-11T05:48:01.874Z] Logged 103537 tokens for agent:main:main (¥1.8021)
+[2026-02-11T05:51:01.785Z] Logged 112560 tokens for agent:main:main (¥2.1538)
+[2026-02-11T05:53:01.936Z] Logged 15191 tokens for agent:main:main (¥0.0530)
+[2026-02-11T05:54:01.925Z] Logged 215 tokens for agent:main:main (¥0.0008)
+[2026-02-11T05:55:01.994Z] Logged 47492 tokens for agent:main:main (¥0.1671)
+[2026-02-11T05:57:01.913Z] Logged 332556 tokens for agent:main:main (¥1.1924)
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+
+Run: openclaw doctor --fix
+
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+
+Run: openclaw doctor --fix
+
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+
+Run: openclaw doctor --fix
+
+Error executing openclaw: Command failed: openclaw sessions --json
+Invalid config at /Users/park0er/.openclaw/openclaw.json:\n- hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+Config invalid
+File: ~/.openclaw/openclaw.json
+Problem:
+  - hooks.internal.entries.custom-archiver: Unrecognized keys: "path", "events"
+
+Run: openclaw doctor --fix
+
+[2026-02-11T06:07:01.876Z] Logged 79854 tokens for agent:main:main (¥0.2860)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 64329
+[2026-02-11T06:12:01.836Z] Logged 64329 tokens for agent:main:main (¥0.2405)
+[2026-02-11T06:15:01.856Z] Logged 8878 tokens for agent:main:main (¥0.0334)
+[2026-02-11T07:58:01.908Z] Logged 9534 tokens for agent:main:main (¥0.0337)
+[2026-02-11T15:04:01.561Z] Logged 731772 tokens for agent:main:main (¥2.5881)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 220930
+[2026-02-11T15:08:01.838Z] Logged 220930 tokens for agent:main:main (¥0.7865)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 135010
+[2026-02-11T15:09:01.822Z] Logged 135010 tokens for agent:main:main (¥0.4735)
+[2026-02-11T15:22:01.816Z] Logged 517512 tokens for agent:main:main (¥1.8582)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 161955
+[2026-02-11T15:29:01.804Z] Logged 161955 tokens for agent:main:main (¥0.5671)
+[2026-02-11T15:38:01.660Z] Logged 242631 tokens for agent:main:main (¥0.8666)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 176041
+[2026-02-11T15:41:01.630Z] Logged 176041 tokens for agent:main:main (¥0.6164)
+[2026-02-11T15:51:01.848Z] Logged 2344 tokens for agent:main:main (¥0.0084)
+[2026-02-11T15:53:01.815Z] Logged 531128 tokens for agent:main:main (¥1.8660)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 199308
+[2026-02-11T15:54:01.874Z] Logged 199308 tokens for agent:main:main (¥0.6975)
+[2026-02-11T16:04:01.892Z] Logged 1299 tokens for agent:main:main (¥0.0045)
+[2026-02-11T16:05:01.882Z] Logged 680 tokens for agent:main:main (¥0.0024)
+[2026-02-11T17:02:01.982Z] Logged 135951 tokens for agent:main:main (¥0.4718)
+Session 69303554-0318-42fe-8aed-6069b7fce924 reset detected. New total: 69674
+[2026-02-11T17:03:02.019Z] Logged 69674 tokens for agent:main:main (¥0.2453)
+[2026-02-11T17:04:01.948Z] Logged 15299 tokens for agent:main:main (¥0.0535)
+[2026-02-11T17:41:01.059Z] Logged 168010 tokens for agent:main:main (¥0.5886)
+Session 96310028-9ede-461d-8522-1d4369790665 reset detected. New total: 18911
+[2026-02-11T17:42:01.736Z] Logged 18911 tokens for agent:main:main (¥0.0654)
+[2026-02-11T17:53:02.504Z] Logged 115453 tokens for agent:main:main (¥0.4128)

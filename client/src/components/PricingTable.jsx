@@ -51,6 +51,16 @@ const PricingTable = () => {
         }));
     };
 
+    const handleCheckboxChange = (model, type, checked) => {
+        setConfig(prev => ({
+            ...prev,
+            [model]: {
+                ...prev[model],
+                [type]: checked
+            }
+        }));
+    };
+
     const handleCurrencyChange = (model, value) => {
         setConfig(prev => ({
             ...prev,
@@ -115,6 +125,7 @@ const PricingTable = () => {
                             <th className="px-6 py-3 rounded-l-lg">{t('model')}</th>
                             <th className="px-6 py-3">{t('inputPrice')}</th>
                             <th className="px-6 py-3">{t('outputPrice')}</th>
+                            <th className="px-6 py-3">Input = Total?</th>
                             <th className="px-6 py-3 rounded-r-lg">{t('currency')}</th>
                         </tr>
                     </thead>
@@ -143,6 +154,17 @@ const PricingTable = () => {
                                             value={config[model].output}
                                             onChange={(e) => handlePriceChange(model, 'output', e.target.value)}
                                             className="bg-transparent border-b border-gray-700 focus:border-emerald-500 w-24 text-white text-right focus:outline-none"
+                                        />
+                                    </div>
+                                </td>
+                                <td className="px-6 py-4">
+                                    <div className="flex items-center gap-2">
+                                        <input
+                                            type="checkbox"
+                                            checked={!!config[model].inputIncludesCache}
+                                            onChange={(e) => handleCheckboxChange(model, 'inputIncludesCache', e.target.checked)}
+                                            className="w-4 h-4 text-emerald-500 bg-gray-700 border-gray-600 rounded focus:ring-emerald-500 focus:ring-2"
+                                            title="Does the Input field in usage logs already include cached tokens?"
                                         />
                                     </div>
                                 </td>

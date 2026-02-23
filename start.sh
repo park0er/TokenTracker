@@ -19,7 +19,7 @@ fi
 
 # Start Frontend
 cd ~/Coding/TokenTracker/client
-if ! pgrep -f "vite" > /dev/null; then
+if ! pgrep -f "port 5173" > /dev/null; then
   echo "Starting Frontend..."
   nohup npm run dev -- --host --port 5173 > client.log 2>&1 &
 else

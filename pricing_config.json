@@ -3,42 +3,63 @@
     "input": 0.50,
     "output": 3.00,
     "cacheRead": 0.125,
+    "inputIncludesCache": true,
     "currency": "USD"
   },
   "gemini-3-pro-high": {
     "input": 2.50,
     "output": 10.00,
     "cacheRead": 0.625,
+    "inputIncludesCache": true,
     "currency": "USD"
   },
   "gemini-2.5-flash-thinking": {
     "input": 0.50,
     "output": 3.00,
     "cacheRead": 0.125,
+    "inputIncludesCache": true,
     "currency": "USD"
   },
   "claude-sonnet-4-5-thinking": {
     "input": 3.00,
     "output": 15.00,
     "cacheRead": 0.30,
+    "inputIncludesCache": false,
     "currency": "USD"
   },
   "xiaomi/mimo-v2-flash": {
     "input": 0.10,
     "output": 0.30,
     "cacheRead": 0.07,
+    "inputIncludesCache": true,
     "currency": "CNY"
   },
   "mimo-v2-flash": {
     "input": 0.10,
     "output": 0.30,
     "cacheRead": 0.07,
+    "inputIncludesCache": true,
     "currency": "CNY"
+  },
+  "gpt-5.3-codex": {
+    "input": 2.50,
+    "output": 10.00,
+    "cacheRead": 1.25,
+    "inputIncludesCache": false,
+    "currency": "USD"
+  },
+  "MiniMax-M2.5": {
+    "input": 0.50,
+    "output": 3.00,
+    "cacheRead": 0.125,
+    "inputIncludesCache": false,
+    "currency": "USD"
   },
   "default": {
     "input": 0.50,
     "output": 3.00,
     "cacheRead": 0.125,
+    "inputIncludesCache": false,
     "currency": "USD"
   },
   "settings": {

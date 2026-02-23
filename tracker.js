@@ -33,9 +33,10 @@ function calculateCostCNY(model, input, output, cacheRead, cacheWrite) {
   const pricingConfig = loadPricing();
   const price = pricingConfig[model] || pricingConfig['default'];
   const cacheReadRate = price.cacheRead ?? price.input;
-  // IMPORTANT: JSONL `input` already INCLUDES cacheRead!
-  // Non-cached input = input - cacheRead
-  const nonCachedInput = Math.max(0, input - (cacheRead || 0));
+  const inputIncludesCache = price.inputIncludesCache ?? false;
+
+  const nonCachedInput = inputIncludesCache ? Math.max(0, input - (cacheRead || 0)) : input;
+
   let cost = ((nonCachedInput + (cacheWrite || 0)) * price.input
     + (cacheRead || 0) * cacheReadRate
     + output * price.output) / 1000000;
@@ -156,14 +157,21 @@ async function pollLogs() {
           const date = new Date(e.timestamp);
           const today = date.toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' });
 
+          const pricingConfig = loadPricing();
+          const price = pricingConfig[e.model] || pricingConfig['default'];
+          const inputIncludesCache = price.inputIncludesCache ?? false;
+
+          const totalInputTokens = inputIncludesCache ? e.input : (e.input + e.cacheRead);
+          const providerTotal = totalInputTokens + e.output;
+
           insertLog.run(
             e.timestamp,
             `session:${sessionId}`,
             e.model,
-            e.totalTokens,    // total_tokens: input + output (matches provider dashboard)
-            e.input,          // input_tokens
+            providerTotal,    // total_tokens
+            totalInputTokens, // input_tokens
             e.output,         // output_tokens
-            e.input,          // input_delta
+            totalInputTokens, // input_delta
             e.output,         // output_delta
             costCNY,
             e.messageId,

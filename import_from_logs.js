@@ -32,9 +32,12 @@ console.log(`Exchange rate: ${exchangeRate}`);
 function calculateCostCNY(model, input, output, cacheRead, cacheWrite) {
     const price = pricingConfig[model] || pricingConfig['default'];
     const cacheReadRate = price.cacheRead ?? price.input;
-    // JSONL `input` already INCLUDES cacheRead!
-    // Non-cached input = input - cacheRead
-    const nonCachedInput = Math.max(0, input - (cacheRead || 0));
+    const inputIncludesCache = price.inputIncludesCache ?? false;
+
+    // If inputIncludesCache is true, `input` is total prompt size, so non-cached = input - cacheRead.
+    // If false, `input` is already strictly non-cached tokens.
+    const nonCachedInput = inputIncludesCache ? Math.max(0, input - (cacheRead || 0)) : input;
+
     let cost = ((nonCachedInput + (cacheWrite || 0)) * price.input
         + (cacheRead || 0) * cacheReadRate
         + output * price.output) / 1000000;
@@ -118,9 +121,9 @@ async function main() {
     db.prepare('DELETE FROM daily_stats').run();
     console.log('Cleared.');
 
-    // 2. Scan all .jsonl files
+    // 2. Scan all .jsonl files (including archived .deleted. and .reset. ones)
     const files = fs.readdirSync(SESSIONS_DIR)
-        .filter(f => f.endsWith('.jsonl') && !f.includes('.deleted.'))
+        .filter(f => f.includes('.jsonl'))
         .map(f => path.join(SESSIONS_DIR, f));
 
     console.log(`Found ${files.length} session files to process.`);
@@ -147,20 +150,23 @@ async function main() {
             for (const e of entries) {
                 const costCNY = calculateCostCNY(e.model, e.input, e.output, e.cacheRead, e.cacheWrite);
 
-                // IMPORTANT: JSONL `input` already INCLUDES cacheRead (input = cached + non-cached)
-                // So: total throughput = input + output (matches provider dashboard)
-                // The JSONL `totalTokens` = input + cacheRead + output, which DOUBLE-COUNTS cache!
-                // Cost: non-cached portion (input - cacheRead) at full rate, cacheRead at reduced rate
-                const providerTotal = e.input + e.output;
+                // Standardize token counts
+                const price = pricingConfig[e.model] || pricingConfig['default'];
+                const inputIncludesCache = price.inputIncludesCache ?? false;
+
+                // For OpenAI (false): input is non-cached, so total context = input + cacheRead
+                // For Gemini/MiMo (true): input is total context
+                const totalInputTokens = inputIncludesCache ? e.input : (e.input + e.cacheRead);
+                const providerTotal = totalInputTokens + e.output;
 
                 insertLog.run(
                     e.timestamp,
                     `session:${sessionId}`,
                     e.model,
-                    providerTotal,    // total_tokens: input + output (matches provider dashboard)
-                    e.input,          // input_tokens: total input (includes cached)
+                    providerTotal,    // total_tokens
+                    totalInputTokens, // input_tokens: total input (cached + non-cached)
                     e.output,         // output_tokens
-                    e.input,          // input_delta: total input (for aggregation)
+                    totalInputTokens, // input_delta
                     e.output,         // output_delta
                     costCNY,          // cost_usd (actually CNY)
                     e.messageId,

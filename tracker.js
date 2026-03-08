@@ -1,9 +1,14 @@
 /**
- * tracker.js - TokenTracker V2 (Log-based)
+ * tracker.js - TokenTracker V2 (Log-based) with Self-Healing
  * 
  * Reads OpenClaw session transcript .jsonl files every minute,
  * importing new messages that haven't been seen yet (tracked by message_id).
- * This gives accurate per-request billing data that matches provider invoices.
+ * 
+ * Resilience features:
+ *   - Consecutive failure watchdog: auto-restarts after 5 failed polls
+ *   - Daily scheduled restart at 4:00 AM CST to prevent memory/fd leaks
+ *   - Health check heartbeat file for external monitoring
+ *   - Verbose error logging with timestamps
  */
 
 const Database = require('better-sqlite3');
@@ -11,6 +16,7 @@ const cron = require('node-cron');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
+const { spawn } = require('child_process');
 
 const db = new Database('ledger.db');
 
@@ -20,6 +26,42 @@ const SESSIONS_DIR = path.join(
   process.env.HOME || '/Users/park0er',
   '.openclaw', 'agents', 'main', 'sessions'
 );
+const HEARTBEAT_FILE = path.join(__dirname, '.tracker_heartbeat');
+const MAX_CONSECUTIVE_FAILURES = 5;
+
+// --- Watchdog State ---
+let consecutiveFailures = 0;
+let lastSuccessfulPoll = new Date();
+let totalPollCount = 0;
+
+function log(msg) {
+  const ts = new Date().toISOString();
+  console.log(`[${ts}] ${msg}`);
+}
+
+function logError(msg, err) {
+  const ts = new Date().toISOString();
+  console.error(`[${ts}] ❌ ${msg}`, err?.stack || err?.message || err);
+}
+
+// --- Heartbeat ---
+function writeHeartbeat(status) {
+  try {
+    const data = JSON.stringify({
+      status,
+      lastSuccess: lastSuccessfulPoll.toISOString(),
+      consecutiveFailures,
+      totalPolls: totalPollCount,
+      seenMessages: seenMessageIds.size,
+      uptime: Math.round(process.uptime()),
+      pid: process.pid,
+      timestamp: new Date().toISOString(),
+    }, null, 2);
+    fs.writeFileSync(HEARTBEAT_FILE, data);
+  } catch (e) {
+    // Heartbeat write failure is non-critical
+  }
+}
 
 // --- Pricing ---
 function loadPricing() {
@@ -56,7 +98,7 @@ function loadSeenIds() {
   for (const row of rows) {
     seenMessageIds.add(row.message_id);
   }
-  console.log(`Loaded ${seenMessageIds.size} known message IDs from DB.`);
+  log(`Loaded ${seenMessageIds.size} known message IDs from DB.`);
 }
 
 // --- JSONL Parsing ---
@@ -92,8 +134,6 @@ async function scanSessionFile(filePath) {
       const output = usage.output || usage.outputTokens || 0;
       const cacheRead = usage.cacheRead || usage.cache_read || 0;
       const cacheWrite = usage.cacheWrite || usage.cache_write || 0;
-      // input already includes cacheRead, so total = input + output
-      const totalTokens = input + output;
       const model = msg.model || sessionModel;
       const timestamp = entry.timestamp || new Date().toISOString();
 
@@ -105,7 +145,6 @@ async function scanSessionFile(filePath) {
         output,
         cacheRead,
         cacheWrite,
-        totalTokens,
       });
     } catch (e) {
       // Skip unparseable lines silently
@@ -136,6 +175,8 @@ const upsertDailyStat = db.prepare(`
 `);
 
 async function pollLogs() {
+  totalPollCount++;
+
   try {
     const files = fs.readdirSync(SESSIONS_DIR)
       .filter(f => f.endsWith('.jsonl') && !f.includes('.deleted.'))
@@ -180,9 +221,9 @@ async function pollLogs() {
 
           upsertDailyStat.run(
             today,
-            e.totalTokens,
+            providerTotal,
             costCNY,
-            e.input,
+            totalInputTokens,
             e.output,
             e.cacheRead
           );
@@ -193,22 +234,60 @@ async function pollLogs() {
       })();
 
       if (newEntries.length > 0) {
-        const ts = new Date().toISOString();
-        console.log(`[${ts}] ${sessionId}: +${newEntries.length} new messages`);
+        log(`${sessionId}: +${newEntries.length} new messages`);
       }
     }
 
     if (totalNew > 0) {
-      console.log(`[${new Date().toISOString()}] Imported ${totalNew} new messages total.`);
+      log(`Imported ${totalNew} new messages total.`);
     }
+
+    // Poll succeeded — reset failure counter
+    consecutiveFailures = 0;
+    lastSuccessfulPoll = new Date();
+    writeHeartbeat('ok');
+
   } catch (e) {
-    console.error('Poll error:', e.message);
+    consecutiveFailures++;
+    logError(`Poll failed (attempt ${consecutiveFailures}/${MAX_CONSECUTIVE_FAILURES})`, e);
+    writeHeartbeat('error');
+
+    // If too many consecutive failures, force restart
+    if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
+      log(`🔄 ${MAX_CONSECUTIVE_FAILURES} consecutive failures detected. Restarting process...`);
+      gracefulRestart();
+    }
   }
 }
 
+// --- Graceful Restart ---
+function gracefulRestart() {
+  log('♻️  Performing graceful restart...');
+  try {
+    db.close();
+  } catch (e) {
+    // DB close failure is non-critical during restart
+  }
+
+  // Spawn a new tracker process and exit the current one
+  const child = spawn(process.argv[0], [process.argv[1]], {
+    cwd: __dirname,
+    detached: true,
+    stdio: ['ignore',
+      fs.openSync(path.join(__dirname, 'tracker.log'), 'a'),
+      fs.openSync(path.join(__dirname, 'tracker.log'), 'a')
+    ],
+  });
+  child.unref();
+
+  log(`♻️  New process spawned (PID: ${child.pid}). Old process (PID: ${process.pid}) exiting.`);
+  process.exit(0);
+}
+
 // --- Start ---
-console.log('TokenTracker V2 (Log-based) starting...');
-console.log(`Sessions dir: ${SESSIONS_DIR}`);
+log('TokenTracker V2 (Log-based + Self-Healing) starting...');
+log(`Sessions dir: ${SESSIONS_DIR}`);
+log(`PID: ${process.pid}`);
 loadSeenIds();
 
 // Run once immediately
@@ -216,4 +295,19 @@ pollLogs();
 
 // Then every minute
 cron.schedule('* * * * *', pollLogs);
-console.log('Polling every minute for new log entries...');
+log('⏱️  Polling every minute for new log entries...');
+
+// Daily restart at 4:00 AM CST (UTC+8 = 20:00 UTC previous day)
+cron.schedule('0 20 * * *', () => {
+  log('🌅 Scheduled daily restart (4:00 AM CST). Restarting for freshness...');
+  gracefulRestart();
+});
+log('🌅 Daily auto-restart scheduled at 4:00 AM CST.');
+
+// Health check: log status every hour
+cron.schedule('0 * * * *', () => {
+  const uptimeHrs = (process.uptime() / 3600).toFixed(1);
+  const memMB = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(1);
+  log(`💓 Health: uptime=${uptimeHrs}h, memory=${memMB}MB, seen=${seenMessageIds.size}, polls=${totalPollCount}, failures=${consecutiveFailures}`);
+  writeHeartbeat('ok');
+});

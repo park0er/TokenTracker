@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "lastSuccess": "2026-03-08T16:59:00.658Z",
+  "consecutiveFailures": 0,
+  "totalPolls": 5,
+  "seenMessages": 30452,
+  "uptime": 196,
+  "pid": 18222,
+  "timestamp": "2026-03-08T16:59:00.658Z"
+}

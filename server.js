@@ -11,6 +11,24 @@ const PORT = 3300;
 app.use(cors());
 app.use(express.json());
 
+// API: Health Check (reads tracker heartbeat)
+app.get('/api/health', (req, res) => {
+  try {
+    const fs = require('fs');
+    const heartbeatPath = path.join(__dirname, '.tracker_heartbeat');
+    if (!fs.existsSync(heartbeatPath)) {
+      return res.json({ status: 'unknown', message: 'No heartbeat file found — tracker may not be running.' });
+    }
+    const heartbeat = JSON.parse(fs.readFileSync(heartbeatPath, 'utf8'));
+    const ageSeconds = (Date.now() - new Date(heartbeat.timestamp).getTime()) / 1000;
+    heartbeat.ageSeconds = Math.round(ageSeconds);
+    heartbeat.stale = ageSeconds > 180; // stale if no heartbeat in 3 minutes
+    res.json(heartbeat);
+  } catch (err) {
+    res.status(500).json({ status: 'error', message: err.message });
+  }
+});
+
 // API: Daily Stats (Default 365 days for client-side flex)
 app.get('/api/stats/daily', (req, res) => {
   try {
